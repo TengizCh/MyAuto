@@ -75,7 +75,12 @@ const render = ({ item }) => {
           VIN: {item.vin}
         </Text>
       </View>
-      <Text style={styles.descText}>ცილინდრი: V{item.cylinders} </Text>
+      <View style={styles.descTextContainer}>
+        <Text style={styles.descText}>ცილინდრი: V{item.cylinders} </Text>
+        <Text style={[styles.descText, { marginTop: 15, fontWeight: "500" }]}>
+          სახელი: {item.client_name}
+        </Text>
+      </View>
       <Divider />
       <Text style={styles.viewText}>{item.views} ნახვა</Text>
     </View>
