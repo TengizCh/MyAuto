@@ -56,6 +56,13 @@ const render = ({ item }) => {
         {item.price_value.toLocaleString("eu")} GEL
       </Text>
       <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
+        {/* <Image
+          style={styles.img}
+          source={{
+            uri: `https://static.my.ge/myauto/photos/${item.photo}/thumbs/${item.car_id}.jpg`,
+          }}
+        /> */}
+        {/* this url doesn't work */}
         <Image source={{ uri: dummy_data[0].image }} style={styles.img} />
         <Image source={{ uri: dummy_data[0].image }} style={styles.img} />
       </ScrollView>
